@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid red;
+    margin: 0 auto;
+    width: 960px;
+    height: 900px;
+}
+
+/* headeer */
+
+header{
+    width: 100%;
+    height: 120px;
+    /* border-bottom: 1px dashed black; */
+    background-image: url(../image/nen_header.jpg);
+
+}
+#huy-hieu-image{
+    height: 90px;
+    width: 90px;
+    float: left;
+    /* border: 1px solid yellowgreen; */
+    margin: 0 auto;
+    margin-top: 10px;
+}
+h3{
+    color: blue;
+}
+h1{
+    color: red;
+}
+#header-section-1{
+    width: 65%;
+    /* border: 1px solid blue; */
+    height: 100%;
+}
+#header-list-1{
+    float: left;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5px;
+    list-style-type: none;
+    /* border: 1px solid blue; */
+    
+}
+#header-list-1 > li{
+    float: left;
+    padding: 10px;
+    margin-left: -10px;
+}
+
+#header-aside-1{
+    width: 35%;
+    height: 100%;
+    float: left;
+    /* border: 1px solid blue; */
+}
+
+#header-search{
+    height: 35px;
+    width: 90%;
+
+}
+/* thanh menu nav */
+
+#nav-1{
+    width: 100%;
+    height: 50px;
+    /* border-bottom: 1px dashed black; */
+    float: left;
+    background-color: #eac54d ;
+}
+
+#nav-list-image{
+    height: 40px;
+    width: 50px;
+    margin: 0 auto;
+    /* border: 2px solid yellowgreen; */
+    margin-top: -15px;
+}
+
+#nav-list-1{
+    
+    list-style-type: none;
+    /* display: flex; */
+    
+    padding: 5px;
+}
+#nav-list-1 > li{
+    margin: 0 auto;
+    float: left;
+    margin-right: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* nav-2 */
+#nav-2{
+    float: left;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid blue;
+}
+
+/* section */
+section{
+    width: 70%;
+    height: 600px;
+    border-right: 1px dashed black;
+    float: left;
+}
+
+h2{
+    color: #be1e2d;
+}
+#section-1{
+    width: 100%;
+    height: 300px;
+    border-bottom: 5px solid #eac54d;
+    float: left;
+    background-image: linear-gradient(yellowgreen,#fffddf );
+}
+#section-2{
+    width: 100%;
+    float: left;
+}
+
+#section-table-1{
+    border: 1px dashed yellow;
+    border-collapse: collapse;
+   
+}
+
+#section-table-1 > td,tr {
+    /* border: 1px dashed yellow; */
+}
+
+/* aside-1 */
+aside{
+    width: 30%;
+    height: 600px;
+    float: left;
+    /* border: 1px solid yellowgreen; */
+}
+footer{
+    width: 100%;
+    height: 100px;
+    border-top: 1px dashed black;
+    float: left;
+    background-color:#be1e2d;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            margin: 0 auto;
+            width: 960px;
+            font-family: 'Times New Roman', Times, serif;
+            /* border: 1px solid black; */
+            overflow: hidden;
+        }
+        
+        nav {
+            width: 100%;
+            /* height: 50px; */
+            /* border-bottom: 1px solid black; */
+            background-color: #a9050c;
+            overflow: hidden;
+        }
+        
+        header {
+            width: 100%;
+            /* height: 300px; */
+            overflow: hidden;
+            /* border-bottom: 1px solid black; */
+        }
+        
+        section {
+            float: left;
+            width: 50%;
+            /* height: 600px; */
+            /* border-right: 1px solid black; */
+            /* border: 1px dashed blue; */
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 13px;
+            color: black;
+            padding-right: 5%;
+        }
+        
+        aside {
+            float: left;
+            width: 50%;
+            /* height: 600px; */
+            /* border: 1px dashed blue; */
+            overflow: hidden;
+            padding-left: 10%;
+        }
+        
+        footer {
+            float: left;
+            width: 100%;
+            border-top: 1px solid black;
+            background-color: #a9050c;
+            text-align: center;
+            overflow: hidden;
+            color: white;
+            padding: 8px;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+        
+        nav li {
+            padding: 12px;
+            /* border: 1px solid red; */
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        
+        nav ul li a:hover {
+            color: yellow;
+        }
+        
+        .sec-1 {
+            margin-left: 20px;
+            margin-top: 20px;
+            /* border: 1px solid blue; */
+            overflow: hidden;
+        }
+        
+        h3 {
+            border-bottom: 3px solid orange;
+            width: fit-content;
+            padding: 12px;
+            margin-left: 5px;
+            color: #a9050c;
+        }
+        
+        h4 {
+            border-bottom: 3px solid orange;
+            padding: 12px;
+            color: #a9050c;
+            margin-bottom: 8px;
+        }
+        
+        h5 {
+            margin-bottom: 15px;
+        }
+        
+        aside #xep-hang {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        aside #xep-hang ul {
+            list-style-type: none;
+        }
+        
+        #xep-hang li {
+            background-color: #a9050c;
+            padding: 8px;
+            margin-bottom: 2px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 13px;
+        }
+        
+        #table-search {
+            /* border: 1px solid blue; */
+            background-color: #eff0f2;
+            border-collapse: collapse;
+            border-radius: 12px;
+            margin-bottom: 8px;
+        }
+        
+        #table-search td {
+            /* border: 1px solid red; */
+            width: 100%;
+        }
+        
+        #table-search td input {
+            width: 100%;
+            margin-top: 12px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            border: 1px solid gray;
+        }
+        
+        #table-search td button {
+            margin-right: 50px;
+            width: 90%;
+            padding: 5px;
+            margin-top: 20px;
+            background-color: #a9050c;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            /* margin-bottom: 3px; */
+            vertical-align: middle;
+        }
+        
+        #table-search td a {
+            margin-top: 20px;
+            vertical-align: middle;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <ul>
+                <li><a href="../html/home.html">Trang chủ</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href="">Bảng xếp hạng</a></li>
+                <li><a href="">Chương trình vnr500</a></li>
+                <li><a href="">Sự kiện</a></li>
+            </ul>
+        </nav>
+        <!-- het phan navv -->
+
+        <header>
+            <img src="../images/HEADER.jpg" alt="">
+        </header>
+        <!-- het phan header -->
+
+
+
+        <section>
+            <h3>DIỄN ĐÀN DOANH NGHIỆP</h3>
+
+            <div class="sec-1">
+                <h5>VVS phát hành thành công hơn 1 triệu cổ phiếu ESOP</h5>
+                <img src="../images/VVS.jpg" alt="vvs" style="height: 60px; width: 100px; margin-right: 20px;">
+                <p>Công ty CP Đầu tư Phát triển Máy Việt Nam (MCK: VVS) đã phát hành thành công cổ phiếu theo chương trình lựa chọn cho người lao động trong công ty năm 2023 (ESOP).</p>
+            </div>
+
+            <div class="sec-1" style="padding-left: 20px;">
+                <h5> CADI-SUN Top 1 Hàng Việt Nam được yêu thích 2023</h5>
+                <img src="../images/CADI-SUN.jpg" alt="casdisun" style="height: 60px; width: 100px; margin-right: 20px;">
+                <p>tối 17/11, tại Hà Nội, Ban Chỉ đạo Cuộc vận động “Người Việt Nam ưu tiên dùng hàng Việt Nam” tổ chức Lễ tôn vinh Hàng Việt Nam được người tiêu dùng yêu thích 2023.
+                </p>
+            </div>
+        </section>
+        <!-- het phan sectionn -->
+
+
+        <aside>
+            <div id="xep-hang">
+                <ul>
+                    <li>Top 50 Vietnam the best</li>
+                    <li>Xếp hạng theo ngành</li>
+                    <li>Xếp hạng theo địa phương</li>
+                </ul>
+            </div>
+            <h4>TÌM KIẾM DOANH NGHIỆP</h4>
+            <div id="table-search">
+
+                <table>
+                    <tr>
+                        <td colspan="2"><input type="text" name="" id="" placeholder="Tên doanh nghiệp"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="" id="" placeholder="Mã số thuế"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="number" name="" id="" value="" placeholder="2024">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Tìm kiếm nâng cao</a></td>
+                        <td><button type="submit">Tìm kiếm</button></td>
+                    </tr>
+                </table>
+            </div>
+        </aside>
+        <!-- het phan asidii -->
+
+
+        <footer>
+            <p>BÀI THI GIỮA KỲ HỆ THỐNG CÔNG NGHỆ WEB</p>
+            <p>Mã sinh viên: 22680401</p>
+            <p>Họ tên sinh viên: Hồ Phúc Lâm</p>
+            <p>Lớp: DHCNTT18A</p>
+        </footer>
+        <!-- het phan foooterr -->
+
+    </div>
+</body>
+
+</html>

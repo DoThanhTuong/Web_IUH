@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-size: 130%;
+}
+
+.container {
+    width: 60%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px 50px; */
+}
+
+.nav .menu .menu-list {
+    display: flex;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.nav .menu .menu-list li {
+    margin: 0 15px;
+}
+
+.nav .menu .menu-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+.nav .menu .menu-list li a:hover {
+    color: #f00;
+}
+
+header {
+    background-image: url("../hinh/hero.jpg"); /* Cập nhật đường dẫn ảnh */
+    background-size: cover;
+    height: 200px; /* Cập nhật chiều cao phù hợp */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Hiệu ứng bóng chữ để dễ đọc hơn */
+    padding: 20px;
+}
+
+/* Tiêu đề Hero */
+header h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    margin-left: 70px;
+}
+
+header h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: 70px;
+}
+
