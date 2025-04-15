@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+}
+.container-fluid {
+    padding: 0px;
+    margin-top: 138px;
+}
+
+header {
+    margin: 0px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+
+}
+.header_1{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+img {
+    width: 209px;
+}
+/* SEARCH */
+.input_search {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.form-inline {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.form-inline input[type="search"] {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #4caa47;
+    border-radius: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+input[type="search"]:focus {
+    outline: none;
+    border: 1px solid #2581c1;
+}
+input[type="search"]:hover {
+    border: 1px solid #2581c1;
+}
+.form-inline button[type="submit"] {
+    width: 20%;
+    height: 40px;
+    background-color: #4CAA47;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #7eed78;
+}
+/* DK-DN-GH */
+.user_actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.user_actions a {
+    text-decoration: none;
+    color: #4caa47;
+    padding: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right:1px solid #000000;
+    font-size: 16px;
+
+}
+.icon-cart:last-child {
+    border-right: none;
+
+}
+.user_actions a:hover {
+    color: #7eed78;
+}
+/* MENU */
+nav{
+    background-color: #4CAA47 !important;
+    border-radius: 10PX !important;
+}
+nav a{
+    font-size: 16px;
+    color: #ffffff !important;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+
+}
+nav a:hover{
+    color: #7eed78 !important;
+}
+
+
+
+
+

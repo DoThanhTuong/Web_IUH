@@ -1,0 +1,128 @@
+        /* phần body */
+        .contaner{
+            margin: 0px auto;
+            padding: 0px auto;
+            width: 960px;
+            font-family: 'Times New Roman', Times, serif;
+        
+        }
+        /* menu nav*/
+    
+        nav{
+            height: 50px;
+            width: 100%;
+            background-color:#a9050c;
+            overflow: hidden;
+        }
+        nav ul{
+            /* xóa dấu chấm */
+            list-style-type: none;
+            
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            float: left;
+            margin-right: 30px;
+            font-family: Arial, Helvetica, sans-serif;      
+        }
+        nav a:hover{
+            color: chocolate;
+        }
+
+        /* image header  */
+        header{
+            height: 300px;
+            width: 100%;
+        }
+        header img{
+            height: 100%;
+            width: 100%;
+        }
+
+        /* content section vs aside */
+        .content{
+            height: 300px;
+            width: 100%;
+        }
+        /* section */
+        section{
+            height: 100%;
+            width: 560px;
+            float: left;
+        }
+        section>hr{
+            width: 260px;
+        }
+        hr{
+           
+            margin: 0px;
+            border: 1px solid #000
+        }
+        section img{
+            height: 80px;
+        }
+        .item{
+            display: flex;
+            width: 400px;
+            margin: 10px;
+        }
+        h3 , p ,h4{
+            margin: 10px;
+        }
+        section>.item>p{
+            margin: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 13px;
+            color: #000;
+        }
+        /* aside */
+        aside{
+            height: 100%;
+            width: 400px;
+            background-color: #eff0f2;
+            float: left;
+        }
+        aside p{
+            margin: 0px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 13px;
+            color: #fff;
+        }
+        .item_xh{
+            height: 15px;
+            background-color: #a9050c;
+            margin-bottom: 2px;
+            padding: 10px;
+        }
+        #name, #ms , #number, .submit_TK{
+            width: 99%;
+            height: 20px;
+            margin-top: 10px;
+            padding: 0px;
+
+        }
+        #address{
+            width: 79%;
+            height: 20px;
+        }
+        #submit{
+            height: 26px;
+            background-color: #a9050c;
+        }
+  
+        /* sv footer  */
+        footer{
+            height: 90px;
+            width: 960px;
+            background-color: #a9050c;
+            text-align: center;
+            padding-top: 10px;
+        }
+        footer p{
+            margin: 0px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
