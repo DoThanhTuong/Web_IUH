@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (registrationForm) registrationForm.style.display = 'none';
     // Chuyển hướng sau 3 giây
     setTimeout(() => {
-      window.location.href = 'index.html'; // Chuyển hướng về trang chủ
+      window.location.href = '../home/index.html'; // Chuyển hướng về trang chủ
     }, 3000);
     // Có thể ẩn thêm link Đăng nhập/Đăng ký trong header nếu auth.js chưa kịp chạy
     // Tuy nhiên, auth.js nên chạy ngay đầu trang để xử lý header

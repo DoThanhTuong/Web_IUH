@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
       filteredProducts.forEach((product) => {
-    const detailPageUrl = `product-detail.html?id=${product.id}`;
+    const detailPageUrl = `../product-detail/index.html?id=${product.id}`;
         const productHtml = `
             <div class="product-item w-[205px]">
                 <div class="card h-100 product-card">

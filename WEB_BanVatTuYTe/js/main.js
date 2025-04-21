@@ -84,7 +84,7 @@ function renderProducts_SPTB(containerCategory, categoryNamesArray, minImageInde
 
     // Lặp dựa trên dải số ảnh (từ 1 đến 20)
     for (let i = minImageIndex; i <= maxImageIndex; i++) {
-        const imgSrc = `../img/Products/anh${i}.png`;
+        const imgSrc = `../../img/Products/anh${i}.png`;
         // Ánh xạ số ảnh 'i' đến index tương ứng trong mảng tên danh mục (bắt đầu từ 0)
         const categoryNameIndex = i - minImageIndex;
         // Lấy tên danh mục, sử dụng tên fallback nếu index vượt quá giới hạn của mảng tên
@@ -116,7 +116,7 @@ function renderProducts_SPTB(containerCategory, categoryNamesArray, minImageInde
             if (categoryId) {
                 // Chuyển hướng đến trang danh sách sản phẩm, lọc theo ID danh mục
                 // Giả định trang danh sách sản phẩm của bạn là products.html và sử dụng tham số 'category_id'
-                window.location.href = `products.html?category_id=${categoryId}`;
+                window.location.href = `../products/index.html?category_id=${categoryId}`;
             } else {
                 console.warn('Clicked category item is missing data-category-id attribute.', this);
             }
@@ -145,7 +145,7 @@ function renderProducts_BC(containerSelector, productsArray, imageRange) {
              console.warn(`Image index ${imageIndex} calculated for product at index ${index} exceeds max image index ${imageRange.max}. Skipping.`);
              return; // Bỏ qua nếu số ảnh vượt quá dải cho phép
         }
-        const imgSrc = `../img/Products/anh${imageIndex}.png`;
+        const imgSrc = `../../img/Products/anh${imageIndex}.png`;
 
 
         // Đảm bảo đối tượng sản phẩm có ID để tạo link đến trang chi tiết
@@ -181,7 +181,7 @@ function renderProducts_BC(containerSelector, productsArray, imageRange) {
             if (productId) {
                 // Chuyển hướng đến trang chi tiết sản phẩm với ID sản phẩm
                 // Giả định trang chi tiết sản phẩm của bạn là product-detail.html
-                window.location.href = `product-detail.html?id=${productId}`;
+                window.location.href = `../product-detail/index.html?id=${productId}`;
             } else {
                 console.warn('Clicked product item is missing data-product-id attribute.', this);
             }
