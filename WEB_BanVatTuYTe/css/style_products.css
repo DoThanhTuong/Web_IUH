@@ -1,0 +1,232 @@
+
+
+.filter-sidebar {
+    padding-right: 25px;
+    /* Thêm khoảng cách phải cho sidebar */
+}
+
+.filter-sidebar .card {
+    border: none;
+    padding: 10px;
+
+}
+
+.filter-sidebar .card-header {
+    background-color: transparent;
+    border-bottom: 1px solid #e0e0e0;
+    /* Viền dưới rõ hơn */
+    font-weight: 500;
+    padding: 0 0 0.5rem 0;
+    /* Chỉ padding dưới */
+    font-size: 1rem;
+    color: #212529;
+    /* Màu đen đậm hơn */
+    margin-bottom: 1rem;
+    /* Khoảng cách dưới header */
+}
+
+.category-list {
+    padding-left: 0;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.category-list li {
+    margin-bottom: 0.6rem;
+    /* Tăng nhẹ khoảng cách */
+}
+
+.category-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+.category-list a:hover,
+.category-list a.active {
+    /* Thêm class active */
+    color: #007bff;
+}
+
+.category-list .count {
+    color: #6c757d;
+    font-size: 0.8rem;
+    margin-left: 4px;
+}
+
+.category-list .sub-category {
+    padding-left: 15px;
+    /* Giữ nguyên thụt lề */
+    margin-top: 0.5rem;
+    /* Thêm khoảng cách trên */
+}
+
+.category-list .sub-category li {
+    margin-bottom: 0.5rem;
+}
+
+.price-filter-label {
+    font-size: 0.8rem;
+    /* Nhỏ hơn chút */
+    color: #6c757d;
+}
+
+#priceRange {
+    cursor: pointer;
+    width: 100%;
+    /* Đảm bảo rộng hết */
+}
+
+.brand-list {
+    padding-left: 0;
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    scrollbar-width: thin;
+    /* Scrollbar mỏng hơn */
+    scrollbar-color: #ccc #eee;
+    /* Màu scrollbar */
+}
+
+/* Webkit scrollbar styling */
+.brand-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.brand-list::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+.brand-list::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+
+.brand-list .form-check {
+    margin-bottom: 0.6rem;
+    /* Tăng nhẹ khoảng cách */
+}
+
+.brand-list .form-check-label {
+    cursor: pointer;
+}
+
+.filter-sidebar .card-footer {
+    background-color: transparent;
+    border-top: none;
+    padding: 0.5rem 0 0 0;
+}
+
+.filter-sidebar .card-footer a {
+    font-size: 0.85rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.filter-sidebar .card-footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* ----- Product Card Styling ----- */
+.product-card {
+    border: 1px solid #e0e0e0;
+    /* Viền rõ hơn */
+    transition: box-shadow 0.2s ease-in-out;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    /* Sử dụng flex để card-body luôn ở dưới */
+    flex-direction: column;
+    /* Xếp chồng lên nhau */
+}
+
+.product-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-color: #c0c0c0;
+    /* Viền đậm hơn khi hover */
+}
+
+.product-img-link {
+    display: block;
+    text-align: center;
+    padding: 20px 15px;
+    /* Tăng padding trên dưới */
+    background-color: #fff;
+    flex-shrink: 0;
+    /* Không co lại */
+}
+
+.product-img {
+    max-height: 170px;
+    /* Giảm chiều cao hơn */
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.product-card .card-body {
+    padding: 12px 15px;
+    /* Điều chỉnh padding body */
+    text-align: left;
+    border-top: 1px solid #f0f0f0;
+    /* Viền nhẹ ngăn cách ảnh và text */
+    flex-grow: 1;
+    /* Phần body sẽ chiếm hết không gian còn lại */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 0.88rem;
+    /* Tinh chỉnh size */
+    font-weight: 400;
+    margin-bottom: 8px;
+    /* Tăng khoảng cách dưới */
+    height: 42px;
+    /* Giới hạn chiều cao (khoảng 2 dòng) */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.4;
+    /* Tăng line-height */
+    flex-grow: 1;
+    /* Đẩy giá và brand xuống dưới nếu tiêu đề ngắn */
+}
+
+.product-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.product-title a:hover {
+    color: #007bff;
+}
+
+.product-price {
+    color: #dc3545;
+    font-weight: 500;
+    font-size: 1.05rem;
+    /* To hơn chút */
+    margin-bottom: 4px;
+    /* Tăng khoảng cách */
+    margin-top: auto;
+    /* Đẩy giá xuống dưới cùng của flex item */
+}
+
+.product-brand {
+    font-size: 0.78rem;
+    /* Nhỏ hơn */
+    color: #6c757d;
+    margin-bottom: 0;
+    /* Bỏ margin dưới */
+}
+
+#product-list-container {
+    gap: 5px
+}

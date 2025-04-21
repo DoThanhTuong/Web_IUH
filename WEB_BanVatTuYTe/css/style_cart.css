@@ -1,0 +1,67 @@
+
+/* Keep or modify cart___row style as needed */
+.cart___row {
+    width: 100%;
+    min-height: 400px;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.cart___row table {
+    margin-top: 20px;
+}
+
+.cart___row img {
+    border: 1px solid #eee;
+    padding: 3px;
+}
+
+.cart___row .remove-item {
+    cursor: pointer;
+}
+
+/* Style for the modal's cart summary list */
+#modal-cart-items-summary p {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #eee;
+}
+
+#modal-cart-items-summary p:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+
+/* Style for the history table */
+.container {
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 100%;
+    padding: 0;
+}
+
+.row_edit_historyCart {
+    margin: 0px;
+}
+
+#order-history-container {
+    background-color: #f8f9fa;
+    /* Light background for history */
+    border-top: 1px solid #dee2e6;
+}
+
+#order-history-container table {
+    margin-top: 15px;
+}
+
+#order-history-container h2 {
+    margin-bottom: 15px;
+}
+
+#no-history-message {
+    margin: 10px;
+}

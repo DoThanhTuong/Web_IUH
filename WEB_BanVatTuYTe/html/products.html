@@ -1,91 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sản phẩm - Vật tư y tế</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - Vật tư y tế</title>
+    <link rel="icon" href="../img/vccc_1.png" type="image/png">
+    <meta name="description" content="Trang chủ của Vật tư y tế - Cung cấp các sản phẩm y tế chất lượng cao.">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BeVietnam:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_index.css">
+    <link rel="stylesheet" href="../css/style_products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="..css/style.css">
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/auth.js"></script>
+
 </head>
+
 <body>
-  <!-- Header -->
-  <div class="container-fluid">
-    <header >
-        <div class="logo">
-            <img src="../img/vccc_1.png" alt="logo" class="img-fluid">
+    <header>
+        <div class="header_1">
+            <div class="logo">
+                <img src="../img/vccc_1.png" alt="logo" class="img-fluid">
+            </div>
+            <div class="input_search">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="input-s" type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i>Tìm
+                        kiếm</button>
+                </form>
+            </div>
+            <div class="user_actions">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item" id="login-link"> <a class="nav-link active" href="login.html">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item" id="register-link"> <a class="nav-link" href="register.html">Đăng ký</a>
+                    </li>
+                    <li class="nav-item" id="logout-link" style="display: none;">
+                        <a class="nav-link" href="#">Đăng xuất</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link icon-cart" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="input_search">
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-0 " type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i>Tìm kiếm</button>
-            </form>
-        </div>
-        <div class="user_actions">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active" href="login.html">Đăng nhập</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="register.html" >Đăng ký</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link icon-cart" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </li>
-            </ul>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="introduce.html">GIỚI THIỆU</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="products.html">SẢN PHẨM</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+           
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link " href="index.html">TRANG CHỦ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="products.html">SẢN PHẨM</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="checkout.html">THANH TOÁN</a>
-            </li>
-            
-          </ul>
-        </div>
-    </nav>
-</div>
+    <div class="container-fluid bg py-4">
+        <div class="row">
 
-  <!-- Main Content -->
-  <div class="container mt-5">
-    <h1 class="mb-4">Danh sách sản phẩm</h1>
-    <div class="row" id="product-list">
-      <!-- Danh sách sản phẩm sẽ được hiển thị bằng jQuery tại đây -->
-      <!-- Ví dụ mẫu -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="images/sp1.jpg" class="card-img-top" alt="Sản phẩm 1">
-          <div class="card-body">
-            <h5 class="card-title">Khẩu trang y tế</h5>
-            <p class="card-text">Hộp 50 cái, chất lượng cao.</p>
-            <p class="text-danger font-weight-bold">50.000đ</p>
-            <a href="product-detail.html" class="btn btn-primary">Xem chi tiết</a>
-          </div>
+            <aside class="col-lg-3 filter-sidebar">
+                <!-- Danh mục -->
+                <div class="card">
+                    <div class="card-header">DANH MỤC</div>
+                    <div class="card-body p-0">
+                        <ul class="category-list mt-2">
+                            <li>
+                                <a href="#" class="category-toggle">Thiết bị y tế</a> <span class="count"></span>
+                                <ul class="category-list sub-category" style="display: block;">
+                                    <li><a href="#">Thiết bị y tế gia đình</a> <span class="count"></span></li>
+                                    <li><a href="#">Thiết bị Y tế Bệnh viện</a> <span class="count"></span></li>
+                                    <li><a href="#">Vật tư y tế cơ bản</a> <span class="count"></span></li>
+                                    <li><a href="#">Vật tư y tế chuyên khoa</a> <span class="count"></span></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Hóa chất, sinh phẩm</a> <span class="count"></span></li>
+                            <li><a href="#">Nội thất Bệnh viện</a> <span class="count"></span></li>
+                            <li><a href="#">Dụng cụ, vật dụng y tế</a> <span class="count"></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Giá -->
+                <div class="card">
+                    <div class="card-header">GIÁ</div>
+                    <div class="card-body p-0 pt-2">
+                        <input type="range" class="form-control-range" id="priceRange" name="priceRange" min="0"
+                            max="25000000" step="50000" value="2500000000">
+                        <div class="d-flex justify-content-between mt-1 price-filter-label">
+                            <span>0 ₫</span>
+                            <span id="price-range-value">2,500,000,000 ₫</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thương hiệu -->
+                <div class="card">
+                    <div class="card-header">THƯƠNG HIỆU</div>
+                    <div class="card-body p-0 pt-2">
+                        <ul class="brand-list">
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand1">
+                                    <label class="form-check-label" for="brand1">Humassis - Hàn Quốc</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand2" checked>
+                                    <label class="form-check-label" for="brand2">Bionet - Hàn Quốc</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand3">
+                                    <label class="form-check-label" for="brand3">Trustmed - Ấn Độ</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand4">
+                                    <label class="form-check-label" for="brand4">Karl Storz - Đức</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand5">
+                                    <label class="form-check-label" for="brand5">Medel - Ý</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand6">
+                                    <label class="form-check-label" for="brand6">Hitec - Trung Quốc</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+
+            <main class="col-lg-9">
+
+                <!-- Product List -->
+                <div class="row" id="product-list-container">
+
+                    <!-- Sản phẩm sẽ được render ở đây -->
+
+                </div>
+            </main>
         </div>
-      </div>
-      <!-- Thêm nhiều sản phẩm khác tương tự -->
+
+
+        <!-- Footer -->
+        <footer class="footer__TT">
+            <div class="footer__1">
+                <div class="footer__logo">
+                    <img src="../img/vccc_1.png" alt="logo">
+                </div>
+                <p>CÔNG TY CỔ PHẦN VẬT TƯ VÀ TRANG THIẾT BỊ Y TẾ VIỆT NAM (VIMEDTEC., JSC)</p>
+                <div class="icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer__2">
+                <div class="footer__h1">
+                    <h1>LIÊN HỆ</h1>
+                </div>
+                <p><strong>Mã số thuế:</strong> 0109132043 Do Sở KH&ĐT Hà Nội cấp ngày 17/03/2020 <br>
+                    <strong>Trụ Sở:</strong> Toà G3 Vinhomes Green Bay, Mễ Trì, Nam Từ Liêm, Hà Nội
+                </p>
+                <p><strong>Tel / Fax:</strong> 0243 20 559 29 - Helpline: 096 99 324 99<br>
+                    <strong>Email:</strong> vimedtec@gmail.com
+                </p>
+                <p><strong>Phát triển kinh doanh toàn quốc:</strong> 096 99 324 99</p>
+                <ul>
+                    <li><strong>Miền Bắc:</strong> 091 10 559 29</li>
+                    <li><strong>Miền Nam:</strong> 090 70 559 29 </li>
+                </ul>
+            </div>
+            <div class="footer__3">
+                <div class="footer__h1">
+                    <h1>phòng ban</h1>
+                </div>
+
+                <h2>Website Liên Kết</h2>
+                <div class="link_lk">
+                    <a href="#">www.inmed.vn </a><br>
+                    <a href="#">www.khamdieutri.vn</a><br>
+                    <a href="#">www.fdoctor.vn</a><br>
+                    <a href="#">www.betaclor.vn</a><br>
+                    <a href="#">www.criorectum.vn</a>
+                </div>
+                <img src="../img/Pictures/dadangkybocongthuong.png" alt="logo">
+            </div>
+        </footer>
+
+        <footer class="footer__copyright bg text-center text-lg-start p-3">
+            <div class="text-center">&copy; 2025 Cửa hàng vật tư y tế</div>
+        </footer>
     </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="bg-light text-center text-lg-start mt-5 p-3">
-    <div class="text-center">&copy; 2025 Cửa hàng vật tư y tế</div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
 </body>
+
 </html>

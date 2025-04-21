@@ -1,14 +1,15 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0px;
     box-sizing: border-box;
-    background-color: #f2f2f2;
     font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #EDF0F3;
 
 }
 .container-fluid {
+    max-width: 1250px;
+    margin-top: 160px;
     padding: 0px;
-    margin-top: 138px;
 }
 
 header {
@@ -17,11 +18,11 @@ header {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    background-color: #f2f2f2;
+    background-color: #EDF0F3;
     position: fixed;
     z-index: 1000;
     top: 0;
-
+    height: 137px;
 }
 .header_1{
     width: 100%;
@@ -104,22 +105,76 @@ button[type="submit"]:hover {
     color: #7eed78;
 }
 /* MENU */
-nav{
+.navbar{
     background-color: #4CAA47 !important;
     border-radius: 10PX !important;
 }
-nav a{
+.navbar a{
     font-size: 16px;
     color: #ffffff !important;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
+    
 
 }
-nav a:hover{
+.navbar a:hover{
     color: #7eed78 !important;
 }
 
+/*=========================footer=========================*/
+.footer__TT {
 
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding: 10px;
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #EDF0F3;
+
+}
+.footer__1, .footer__2, .footer__3{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.footer__h1 h1{
+    height: 100px;
+    padding-top: 30px;
+    margin: 10px 0px 10px 0px;
+    font-size: 24px !important;
+    color: #4CAA47;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.footer__1 p{
+    margin: 25px 0px 25px 0px;
+    font-size: 15px;
+
+}
+.icons{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    font-size: 40px;
+}
+.footer__2{
+  font-size: 15px;
+}
+.link_lk{
+    text-decoration: none;
+    margin: 20px;
+}
+
+.footer__copyright{
+    background-color: #EDF0F3;
+    border-radius: 0px 0px 10px 10px;
+  }
 
 
 
